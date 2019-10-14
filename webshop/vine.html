@@ -1,0 +1,512 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,intial-scale=1.0" name="viewport">
+<title>Vine</title>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="mainHeader" id="vinMenu">
+		<section class="widthOnPage">
+			<div class="mainLogo">
+				<a href="index.html"><img src="images/" alt="Skærsøgaard logo"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a class="menu" href="main.html">Forside</a></li>
+					<li><a id="aktiv" class="menu" href="vine.html">Vine</a></li>	
+					<li><a class="menu" href="#">Køb direkte</a></li>
+					<li><a class="menu" href="#">Pris og forhandlere</a></li>
+					<li><a class="menu" href="#">Besøg vingården</a></li>
+					<li><a  class="menu" href="kontakt.html">Kontakt</a>
+						<ul>
+							<li><a href="vinavler_forening.html">Dansk Vinavler forening</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+	<main class="vinMain">
+		<section class="koebHer">
+			<h1>Køb din vin her!</h1>
+			<a href="#"><i class="fas fa-cart-plus"></i></a>
+		</section>
+		<nav class="vinArter" id="menu">
+			<ul>
+				<li><a href="#roed">Rødvin</a></li>
+				<li><a href="#hvid">Hvidvin</a></li>
+				<li><a href="#rose">Rosévin</a></li>
+				<li><a href="#champagne">Champagne</a></li>
+				<li><a href="#dessert">Dessertvin</a></li>
+			</ul>
+		</nav>
+		<aside class="indkoebskurv" id="kurv">
+			<h4><i class="fas fa-check"></i>Dit produkt er tilføjet til kurven</h4>
+			<p>2017 La Umbra Cabernet Sauvignon Dealu Mare Halewood, er blevet tilføjet til din kurv.<span>Antal 12</span></p>
+			<a href="#">Gå til kurv</a>
+		</aside>
+		<section class="vin widthOnPage" id="roed">
+			<h2>Rødvin</h2>
+				<article class="vinUdvalg">
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2017 <br> La Umbra Cabernet Sauvignon Dealu Mare Halewood</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/roedvin1.jpg" alt="2017 La Umbra Cabernet Sauvignon Dealu Mare Halewood">
+							</div>
+							<div class="vinTekst">
+								<p>Alle druer til denne Cabernet Sauvignon håndhøstes selekteres og gærer og lager derefter på ståltank. En moden og saftig Cabernet Sauvignon med solbær og bløde krydret noter. Fantastisk til en bøf.</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input type="button" value="Tilføj" onClick="kurv()"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2015 <br> Podere Montepulciano d'Abruzzo Umani Ronchi</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">	
+								<img src="images/roedvin2.jpg" alt="2015 Podere Montepulciano d'Abruzzo Umani Ronchi">
+							</div>
+							<div class="vinTekst">
+								<p>Podere Montepulciano d'Abruzzo Umani Ronchi, er en rubinrød vin som byder på en appetitvækkende frisk bouquet af solbær, blomme og kirsebær. Smagen er saftig og smækker, middelfyldig og behagelig afrundet.</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2013 <br> Gran Reserve Viu Manent Malbec Colchagua</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/roedvin3.jpg" alt="2015 Viu Manent Cabernet Sauvignon Reserva Est. Collection">
+							</div>
+							<div class="vinTekst">
+								<p>Gran Reserva Malbec byder på en bouquet af svesker, salvie og mokka samt en smag med noter af mørk chokolade og søde krydderier der perfekt kombineret med runde saftige tanniner giver en elegant og velbalanceret vin.</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+			</article>
+		</section>
+		<section class="vin widthOnPage" id="hvid">
+			<h2>Hvidvin</h2>
+				<article class="vinUdvalg">
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2017 <br> La Umbra Cabernet Sauvignon Dealu Mare Halewood</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/hvidvin1.jpg" alt="2017 La Umbra Cabernet Sauvignon Dealu Mare Halewood">
+							</div>
+							<div class="hvidVinTekst">
+								<p>La Umbra Pinot Grigio på håndhøstede druer, er en læskende frisk og aromatisk hvidvin med duft af æble, pære, nektarin og kaprifolie som går igen i den saftige smag.</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2018 <br> Viu Manent Chardonnay Reserva Est. Collection Colchagua</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">	
+								<img src="images/hvidvin2.jpg" alt="2018 Viu Manent Chardonnay Reserva Est. Collection Colchagua">
+							</div>
+							<div class="hvidVinTekst">
+								<p>Viu Manent Chardonnay er en flot hvidvin med en fyldig og indtagende bouquet af blomster og frugter. Smagen er rig og fyldig med masser af god frugt, samt friskhed i den elegante eftersmag.</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2016 <br> Le Paradou Viognier Vin de Pays d´Oc</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/hvidvin4.jpg" alt="2016 Le Paradou Viognier Vin de Pays d´Oc">
+							</div>
+							<div class="hvidVinTekst">
+								<p>Le Paradou er resultatet af et samarbejde mellem nogle af områdets andre kvalitetsproducenter og Château Pesquié, man har brugt Viognier druer fra egne, unge vinstokke og købt...</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+				</article>
+		</section>
+		<section class="vin widthOnPage" id="rose">
+			<h2>Rosévin</h2>
+				<article class="vinUdvalg">
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2018 <br> Alamos Rosé Malbec Mendoza Catena</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/rosevin1.jpg" alt="2018 Alamos Rosé Malbec Mendoza Catena">
+							</div>
+							<div class="roseVinTekst">
+								<p>Den appetitvækkende bouquet byder på røde bær og modne røde frugter. Det er en frugtig, sprød og forfriskende rosé, som er genial som terrassevin eller som ledsager til gastronomi</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2018 <br> Brise Marine Rosé VDP Mediterranée Estandon Vignerons</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">	
+								<img src="images/rosevin2.jpg" alt="2018 Brise Marine Rosé VDP Mediterranée Estandon Vignerons">
+							</div>
+							<div class="roseVinTekst">
+								<p>Bouqueten er frugtig og luftig med strejf af røde bær lidt krydderi, smagen er meget frisk og elegant, og har en fin rund, finish. Navnet hentyder til de kølige havvinde...</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2017 <br> The Wolftrap Rosé Boekenhoutskloof</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/rosevin3.jpg" alt="2017 The Wolftrap Rosé Boekenhoutskloof">
+							</div>
+							<div class="roseVinTekst">
+								<p>Vinen har en imponerende dyb, pink farve, og en frugtig bouquet af bær. Smagen er frugtig, frisk, sprød og slutter i en tør finish. Den er velegnet som ledsager til mad eller som aperitif. </p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+			</article>
+		</section>
+		<section class="vin widthOnPage" id="champagne">
+			<h2>Champagne</h2>
+				<article class="vinUdvalg">
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>Drappier Champagne Rosé de Saignée Brut</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/champagne1.jpg" alt="Drappier Champagne Rosé de Saignée Brut">
+							</div>
+							<div class="champagneTekst">
+								<p>Den kaldes Drappier Brut Nature Zéro Dosage Sans Souffre Blanc de Noirs. Den er altså uden svovl men også uden dosage, og ufiltreret og udelukkende fremstillet på Pinot Noir.</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>Champagne Brut Réserve Vieilles Vignes Bérêche et Fils</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">	
+								<img src="images/champagne2.jpg" alt="Champagne Brut Réserve Vieilles Vignes Bérêche et Fils">
+							</div>
+							<div class="champagneTekst">
+								<p>I munden er teksturen cremet og behageligt vedvarende syren trækker mundvand og giver lyst til mere Champagne! Æble, brioche og de letduftende...</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>Drappier Champagne Brut Nature Sans Soufre</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/champagne3.jpg" alt="Drappier Champagne Brut Nature Sans Soufre">
+							</div>
+							<div class="champagneTekst">
+								<p>Den kaldes Drappier Brut Nature Zéro Dosage Sans Souffre Blanc de Noirs. Det er Roffiaen, der står bag den spændende nyhed. Champagnen er en assemblage, dvs...</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+			</article>
+		</section>
+		<section class="vin widthOnPage" id="dessert">
+			<h2>Dessertvin</h2>
+				<article class="vinUdvalg">
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2017 <br> Moscato d'Asti Bricco Riella Cascina Pian d'Or</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/dessertvin1.jpg" alt="2017 Moscato d'Asti Bricco Riella Cascina Pian d'Or">
+							</div>
+							<div class="dessertVinTekst">
+								<p>I glasset byder vinen på lifligt sødmefulde druearomaer og nuancer af hyldeblomst. Smagen er sitrende intens og sød, og eftersmagen er lang og sprød.</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2018 <br> Grappoli Rossi Brachetto Piemonte Cascina Pian d'Or</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">	
+								<img src="images/dessertvin2.jpg" alt="2015 Podere Montepulciano d'Abruzzo Umani Ronchi">
+							</div>
+							<div class="dessertVinTekst">
+								<p>Brachetto er en lille, sødmefuld drue med blåligt skind Vinens gæring standses inden al sukkeret er omdannet til alkohol. Resultatet er en let perlende rødvin...</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+					<article class="roedvin">
+						<div class="pris1">
+							<h6>99.98,-</h6>
+						</div>
+						<h3>2016 <br> Vigna Senza Nome Moscato d'Asti Braida</h3>
+						<div class="vinInfo">
+							<div class="vinBilleder">
+								<img src="images/dessertvin3.jpg" alt="2015 Viu Manent Cabernet Sauvignon Reserva Est. Collection">
+							</div>
+							<div class="dessertVinTekst">
+								<p>Braida fremstiller langtfra kun Barbera, og deres liflige Moscato d'Asti er også helt fantastisk. En indtagende perlende hvidvin...</p>
+								<a href="produktside.html">Læs mere</a>
+								<form>
+									<select name="antal">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+									<i class="fas fa-cart-plus"><input onClick="kurv()" type="button" value="Tilføj"></i>
+								</form>
+							</div>
+						</div>
+					</article>
+			</article>
+		</section>
+		<footer class="forsideFooter" id="mainFooter">
+			<div id="adresseInfo">
+				<h4>KONTAKT INFO</h4> <br>
+				<p class="footerInfo">Skærsøgaard Vin<br>Nørresøvej 12, Dons<br>6051 Almind</p>
+			</div>
+			<div id="kontaktInfo">
+				<p class="footerInfoKontakt">Tlf. 7555 4473<br>Mobil 2338 0809<br>Fax 7555 4473<br>E-mail info@dansk-vin.dk</p>
+			</div>
+				<img class="vinrankeLogo" src="images/vinrankelogo.png" alt="Vinranke logo">
+		</footer>
+	</main>
+	<a class="tilTop" href="#vinMenu" id="tilTop" onClick="tilTopFun()">Til top</a>
+<script src="javascript/plugin.js"></script>
+</body>
+</html>

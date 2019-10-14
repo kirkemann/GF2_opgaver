@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+margin:0;
+padding: 0;
+box-sizing:border-box;
+}
+
+body{
+	padding-top: 180px;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+/****** Start grid *****/
+.header{ grid-area: header; }
+.slider { grid-area: slider; }
+.main { grid-area: main; }
+.section { grid-area: section; }
+.footer { grid-area: footer; }
+.headerpic { grid-area: headerpic; }
+.nav { grid-area: nav; }
+.sliderpic { grid-area: sliderpic; }
+.text { grid-area: text; }
+.mainpic { grid-area: mainpic; }
+.navfooter { grid-area: navfooter; }
+.navfooter1 { grid-area: navfooter1; }
+.tele { grid-area: tele; }
+.email { grid-area: email; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'slider slider slider slider slider slider'
+	'main main main main main main'
+	'section section section section section section' 
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/****** Slut grid *****/
+/****** Start Header *****/
+.header{
+	height: 180px;
+	grid-template-areas: 'headerpic headerpic headerpic headerpic headerpic nav';
+	display: grid;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.headerpic img{
+	width: 30%;
+	margin-left: 55px;
+	transition: 0.5s;
+}
+
+ul{
+	margin-top: 75px;
+}
+li{
+	display: inline;
+	margin: 10px;
+	list-style-type: none;
+}
+
+#navmenu a {
+	text-decoration: none;
+	color: black;
+	
+}
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/****** Slut Header *****/
+/****** Start Slider *****/
+
+.slider{
+	background-color: #06E575;
+	height: 400px;
+	grid-template-areas: '. sliderpic sliderpic text text . ';
+	display: none;
+}
+.sliderpic img {
+    width: 55%;
+    margin-left: 185px;
+    margin-top: 30px;
+}
+.slider1{
+	background-color: #06E575;
+	height: 400px;
+	grid-template-areas: 'sliderpic2 text2';
+	display: grid;
+}
+.slider1 h1{
+	font-size: 75px;
+}
+.sliderpic2 {
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.fa-check-circle{
+	color: white;
+	background-color: orange;
+	border-radius: 100%;
+}
+.text{
+	margin-right: 125px;
+	margin-top: 90px;
+}
+.text p {
+	margin-top: 25px;
+}
+.text h3 {
+	background-color: orange;
+	border-radius: 27px;
+	width: 40%;
+	height: 40px;
+	text-align: center;
+	padding-top: 8px;
+	margin-top: 35px;
+}
+.text2 h3 {
+	background-color: orange;
+	border-radius: 27px;
+	width: 40%;
+	height: 40px;
+	text-align: center;
+	padding-top: 8px;
+}
+.text2 h4{
+	font-size: 24px;
+	padding-bottom: 15px;	
+}
+.text2 p{
+	padding-bottom: 15px;	
+}
+.text2{
+	margin: 50px;
+}
+.fa-plus{
+	font-size: 40px;
+}
+#slide {
+    position: absolute;
+    bottom: 145px;
+    right: 800px;
+}
+#circle1{
+	border-radius: 100%;
+}
+#circle2{
+	border-radius: 100%;
+	background-color: white;
+}
+/****** Slut Slider *****/
+/****** Start Main *****/
+.main{
+	
+	height: 390px;
+	grid-template-areas: '. mainpic mainpic text text . ';
+	display: grid;
+}
+.mainpic img {
+        width: 60%;
+    margin-top: 40px;
+    margin-left: 140px;
+}
+/****** Slut Main *****/
+/****** Start Section *****/
+.section{
+	background-color: skyblue;
+	height: 380px;
+	grid-template-areas: '. mainpic mainpic text text . ';
+	display: grid;
+}
+.sectionpic img {
+        width: 60%;
+    margin-top: 40px;
+    margin-left: 140px;
+}
+/****** Slut Section *****/
+.footer{
+	height: 180px;
+	grid-template-areas: 'navfooter navfooter1 . . tele email  ';
+	display: grid;
+}
+.navfooter li , .navfooter1 li {
+	display: block;
+}
+.tele h3 {
+	font-size: 30px;
+}
+.tele{
+	padding-top:  75px;
+}
+.email h3 {
+	font-size: 30px;
+}
+.email{
+	padding-top:  75px;
+}
+.navfooter{
+	margin-left: 50px;
+}
+#btn{
+	position: fixed;
+    top: 600px;
+    right: 10px;
+    z-index: 20;
+	cursor: pointer;
+	display: none;
+	
+}
+#btn i {
+	font-size: 40px;
+}

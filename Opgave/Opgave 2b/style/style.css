@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*******Header start*******/
+header h1  {
+    color: orange;
+    font-size: 25px;
+	text-align: center;
+}
+header h2 {
+	color: black;
+	font-size: 15px;
+    text-align: center;
+}
+/*********Header slut*****/
+/********Main start*****/
+main h3 {
+	color: white;
+	font-size: 20px;
+	background-color: orange;
+}
+main a {
+	color: orange;
+	font-size: 15px;
+	cursor: pointer;
+}
+main p {
+	color: dimgrey;
+}
+span {
+	color: black;
+}
+/******Main slut*****/
+/******Footer start****/
+footer h5 {
+	color: orange;
+	text-align: center;
+	font-size: 25px;
+	margin: 5px;
+}
+footer p {
+	color: black;
+	text-align: center;
+	margin: 5px;	
+}
+/********Footer slut*****/

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#body{
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	background-color: purple;
+}
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: 
+		'header'
+	
+	
+}
+/**** HEADER START****/
+
+.header{
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	display: grid;
+	grid-template-areas: 
+		'img skole  nav nav nav nav'
+		'. . sec-0 sec-0 . .'
+		'. . sec-10 sec-10 . .';
+	background-color: #333;
+	grid-area: header;
+	
+	
+}
+.img{
+	grid-area: img;
+	width: 50%;
+	height: auto;
+	margin-left: 50%;
+	padding-top: 2%;
+}
+
+.skole{
+	grid-area: skole;
+	padding-top: 20%;
+}
+.nav{
+	grid-area: nav;
+	list-style-type: none;
+}
+.nav ul {
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    display: grid;
+    text-align: center;
+	padding-top: 50px;
+}
+.sec-0{
+	grid-area: sec-0;
+	text-align: center;
+}
+.sec-0 h1,
+.sec-10 h2{
+	color: white;
+	font-size: 50px;
+}
+.sec-0 h3,
+.sec-10 p{
+	color: white;
+	font-size: 25px;
+}
+.sec-10{
+	grid-area: sec-10;
+	text-align: center;
+	background-color: lightgreen;
+}

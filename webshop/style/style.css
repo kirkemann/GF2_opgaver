@@ -1,0 +1,782 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+.widthOnPage{
+	width: 80%;
+	margin: 0 auto;
+	display: flex; 
+}
+/*******Forside***********/
+.forsideBaggrund{
+	background-image:url("../image/vinmark.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 100%;
+    width: 100%;
+	position: relative;
+}
+.forsideHeader{
+	background-color: #48072e;
+	text-align: center;
+    padding: 10px;
+
+}
+.velkommen{
+	background-color: #48072e;
+	width: 16%;
+	border-radius: 100px;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	margin-left: -8%;
+    padding: 7px 0;
+}
+.pil{
+	position: absolute;
+    bottom: 18%;
+	right: 12%;
+    width: 8%;
+}
+.velkommenKnap{
+	text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    padding: 3px 10%;
+    display: block;
+    font-size: 24px;
+}
+.forsideFooter{
+	background-color: #414143;
+	display: flex;
+    position: absolute;
+	z-index: 15;
+	width: 100%;
+	bottom: 0;
+	height: 134px;
+}
+.footerInfo{
+	color:#cccccc;
+	text-align: right;
+	font-size: 14px;
+}
+.footerInfoKontakt{
+	color: #cccccc;
+    font-size: 14px;
+}
+#adresseInfo{
+	width: 50%;
+    margin: 22px 0;
+    padding: 0 1%;
+    border-right: #cccccc solid 2px;
+}
+#kontaktInfo{
+    width: 50%;
+	margin: 22px 0;
+    padding: 0 1%;
+}
+.vinrankeLogo{
+	position: absolute;
+	z-index: 20;
+	width: 8.6%;
+    bottom: -6%;
+    right: 25%;
+	transform: rotate(13deg);
+}
+h4{
+    margin-top: -1px;
+	float: right;
+	color: #cccccc;
+}
+/*******Undermenu, main*******/
+
+/*******Menu********/
+.mainHeader{
+	background-color: #48072e;
+	width: 100%;
+}
+.mainLogo{
+	width: 35%;
+	margin-top: 2%;
+}
+.mainLogo img{
+	width: 100%;
+}
+nav{
+	width: 65%;
+	text-align: right;
+}
+nav ul ul{
+	display: none;
+	position: absolute;
+	z-index: 6;
+	background-color: #707070;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li:hover{
+	background-color: #707070;
+}
+nav a{
+	text-decoration: none;
+	color: #b4b4b4;
+    padding: 39px 14px 40px;
+    display: block;
+	font-weight: 700;
+	font-size: 14px;
+}
+nav a:hover{
+	background-color: #707070;
+	color:#fcfcfc;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li a{
+	padding: 5px 14px 5px;
+	text-align: left;
+}
+#aktiv{
+	background-color: #707070;
+	color:#fcfcfc;
+}
+/*******Information om butikken********/
+.infoButik{
+	margin-top: 2%;
+}
+.skaersoegaardVin h1, h2{
+	font-size: 24px;
+	color: #707070;
+}
+.skaersoegaardVin{
+	width: 50%;
+}
+.skaersoegaardVinTekst{
+    padding-right: 4%;
+	font-size: 14px;
+}
+#specialStyle{
+	flex-wrap: wrap; 
+	justify-content: space-around;
+}
+.billeder{
+	width: 33.33%;
+	margin: 3% 0 0;
+}
+.billeder img{
+	width: 95%;
+	filter: brightness(60%);
+}
+.billeder img:hover{
+	filter: brightness(100%);
+	transition: 0.5s;
+}
+/********tilbud********/
+#tilbudOverskrift{
+	background-color: #cdc4bd;
+    margin-top: 3%;
+}
+#tilbudOverskrift h2{
+	color: #48072e;
+	text-align: center;
+    font-size: 40px;
+}
+.tilbudOverblik{
+	background-color:#e6e1de;
+	text-align: center;
+	padding-bottom: 3%;
+}
+.tilbud{
+	width: 33.33%;
+    margin: 3% 0;
+}
+.tilbud img{
+	border: #707070 solid 1px;
+}
+#tilbudBorder{
+	border-left: #707070 solid 2px;
+	border-right: #707070 solid 2px;
+}
+.tilbud h3{
+	color:#707070;
+    margin: 2% 0;
+}
+.tilbud p{
+    margin-bottom: 7%;
+	color:#707070;
+	font-size: 14px;
+}
+.tilbud a{
+	text-decoration: none;
+    color: #707070;
+	font-size: 14px;
+}
+#laesNyheder{
+	text-decoration: none;
+	color:#b4b4b4;
+	background-color: #48072e;
+	font-weight: 900;
+    padding: 7px 2%;
+    border-radius: 10px;
+}
+/********Main - footer********/
+#mainFooter{
+	position: relative;
+}
+#mainFooter img{
+	width: 6.6%;
+    bottom: 5%;
+	right: 30%;
+}
+/*********kontakt formular********/
+.kontaktFormular{
+	background-color:#48072e;
+    height: 83%;
+	width: 40%;
+	position: absolute;
+	z-index: 5;
+    bottom: 0;
+	right: 1.7%;
+    border-radius: 20px 20px 0px 0px;
+}
+.kontaktFormular h1{
+    font-size: 48px;
+    margin: 0 4.6%;
+    color: #ededed;
+}
+input[type=date]{
+	border-radius: 4px;
+	margin: 5px 5%;
+    width: 25%;
+    color: rgb(0, 0, 0, 0.58);
+	padding: 1%;
+    border: none;
+
+}
+input[type=number]{
+	border-radius: 4px;
+	margin: 5px 5%;
+    width: 90%;
+	padding: 1%;
+    border: none;
+}
+input[type=text]{
+	border-radius: 4px;
+	margin: 5px 5%;
+    width: 90%;
+	padding: 1%;
+    border: none;
+}
+fieldset{
+    margin: 0px 5%;
+	
+}
+legend{
+	text-align: center;
+    padding: 0px 1%;
+	color:#b4b4b4; 
+	
+}
+input[type=checkbox]{
+	margin: 10px 0 10px 5%;
+}
+.kontaktSubmit{
+    margin: 2% 5%;
+	padding: 14px 20px;
+	background-color: #7a7a7a;
+	color:#f2f2f2;
+	border:none;
+}
+select{
+	margin: 5px 0 5px 5%;
+	padding: 1%;
+    border: none;
+}
+.inputOverskrift{
+	color:#b4b4b4; 
+	margin: 1% 5% 0;
+}
+.checkboxText{
+	display: inline; 
+	padding-left:2%; 
+	color:#b4b4b4;
+}
+#sucess{
+	position: absolute;
+    z-index: 4;
+    bottom: -6px;
+    left: -86.8%;
+}
+#fejl{
+	position: absolute;
+	z-index: 10;
+    top: 0;
+    left: -65%;
+}
+/************Vine*********/
+.koebHer{
+    margin: 2% 0;
+    text-align: center;
+}
+.koebHer h1{
+	text-align: center;
+	font-size: 40px;
+    display: inline;
+}
+.koebHer .fa-cart-plus{
+	background: none;
+	color: #000000;
+    display: inline;
+    padding: 0;
+    position: absolute;
+    top: 15%;
+    font-size: 30px;
+	width: 59%;
+}
+.koebHer .fa-cart-plus:hover{
+	background:none;
+}
+.vinArter{
+	background-color: #48072e;
+	width: 100%;
+	text-align: center;
+    position: fixed;
+    z-index: 100;
+	transition: 0.5s;
+}
+.vinArter ul li{
+	display: inline-block;
+}
+.vinArter ul li a{
+    padding: 0 20px;
+    font-size: 20px;
+}
+.vinArter ul li a:hover{
+	background-color: #707070;
+    color: #fcfcfc;
+}
+.vin{
+    margin: 6% auto;
+    display: block;
+    background-color: #cccccc;
+    padding-top: 25px;
+}
+.vin h2{
+	text-align: center;
+	font-size: 40px;
+	color: #000000;
+}
+.vinUdvalg{
+	display: flex;
+}
+.roedvin{
+    width: 30%;
+	background-color: #ffffff;
+    margin: 1% auto 2%;
+    position: relative;
+}
+.roedvin img{
+	width: 100%;
+}
+.roedvin form select{
+	border: 1px solid;
+    width: 28%;
+    margin: 5px 0;
+    display: block;
+}
+.roedvin form{
+    margin-top: 7%;
+}
+.vinInfo{
+	display: flex;
+    margin: 6% 1%;
+}
+.vinBilleder{
+    width: 45%;
+}
+.vinTekst, .hvidVinTekst, .roseVinTekst, .champagneTekst, .dessertVinTekst{
+    width: 50%;
+}
+.roedvin h3{
+    margin: 3% 11% 0 8%;
+}
+.fa-cart-plus{
+	width: 64%;
+	font-size: 20px;
+    margin: 3% 0;
+	padding: 3% 3%;
+	background-color: #48072e;
+    color: #ffffff;
+}
+.fa-cart-plus:hover{
+	background-color:#48072ebf;
+}
+.vinUdvalg input[type=button]{
+    background-color: transparent;
+    margin: 0 10%;
+    font-size: 19px;
+    border: none;
+    color: #ffffff;
+}
+.hvidVinTekst form{
+	margin-top: 32%;
+}
+.roseVinTekst form{
+    margin-top: 33%;
+}
+.champagneTekst form{
+    margin-top: 30%;
+}
+.dessertVinTekst form{
+    margin-top: 47%;
+}
+.tilTop{
+	text-decoration: none;
+	background-color: #48072e;
+	color: #b4b4b4;
+	padding: 20px;
+	font-size: 20px;
+	border: #000000 1px solid;
+	position:fixed;
+	z-index: 20;
+	right: 2%;
+	bottom: 2%;
+	display: none;
+}
+.indkoebskurv{
+	background-color: #48072e;
+	width: 20%;
+	position: fixed;
+	z-index: 30;
+	height: 100%;
+	right: 0;
+	top: 0;
+	padding: 10px;
+	opacity: 0.9;
+	display: none;
+}
+.indkoebskurv h4{
+	width: 100%;
+	font-size: 23px;
+    margin: 26% 0 0;
+}
+.indkoebskurv span{
+	display: block;
+    font-weight: bold;
+}
+.indkoebskurv p{
+    color: #ffffff;
+    margin: 130px 0px 20px;
+	border-top: #bbbbbb 1px solid;
+    border-bottom: #bbbbbb 1px solid;
+}
+.indkoebskurv a{
+	background-color: #b4b4b4;
+	padding: 10px;
+	text-decoration: none;
+}
+#laesMere{
+	display: none;
+}
+.pris1{
+	background-color: #f9ca00;
+	border-radius: 50% 50%;
+	padding: 10px;
+	width: 30%;
+    position: absolute;
+    z-index: 50;
+    top: 19%;
+    transform: rotate(-10deg);
+    left: -10%;
+}
+.pris1 h6{
+	text-align: center;
+	font-size: 20px;
+}
+/************produktside************/
+.produkt h1{
+	text-align: center;
+	font-size: 40px;
+	padding: 1%;
+}
+.produkt{
+	background-color:#cccccc;	
+}
+.produktInfo{
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+.produktBilleder{
+	width: 50%;
+}
+.produktBilleder img{
+    margin: 5% 30%;
+    width: 28%;
+}
+.produktTekst{
+	width: 50%;
+	padding: 5% 0px;
+}
+.produktTekst p{
+    padding: 5% 3% 2% 0;
+}
+.produktTekst span{
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #fae600;
+}
+.produktTekst select{
+	width: 20%;
+	border: #000000 1px solid;
+	margin: 0;
+}
+.produktNav{
+	background-color: #48072e;
+	width: 100%;
+	text-align: center;
+}
+.produktNav a{
+    padding: 12px 25px 12px;
+	font-size: 20px;
+}
+.vinInformation,.vinAnmeldelser,.vinBeskrivelse{
+	background-color: #ffffff;
+	width: 80%;
+	margin: 0 auto;
+	display: none;
+    padding: 25px 0;
+}
+.vinInformation div{
+	display:flex;
+	border: 1px solid grey;
+}
+.vinInformation div b{
+	width: 20%;
+}
+.vinInformation div p{
+	width:80%;
+}
+.vinAnmeldelser ul,.vinInformation div{
+    margin: 0 3%;
+}
+.vinAnmeldelser ul li,.vinInformation div b,.vinInformation div p{
+	padding: 10px 0;
+}
+.vinBeskrivelse div{
+    margin: 15px 3%;
+}
+.vinBeskrivelse h3{
+    font-size: 22px;
+    font-weight: normal;
+}
+/*___________Responsiv forside________*/
+@media screen and (min-width:928px) and (max-width:1180px)
+{
+	.velkommen{
+		width: 20%;
+	}
+}
+
+@media screen and (min-width:605px) and (max-width:927px)
+{
+	.velkommen{
+		width:30%;
+	}
+	.pil{
+	    width: 7%;
+	}
+	.vinrankeLogo{
+		right: 15%;
+		width: 12.6%;
+	}
+}
+
+@media screen and (min-width:300px) and (max-width:604px)
+{
+	.vinrankeLogo {
+		right: 2%;
+		width: 16.6%;
+	    bottom: 0%;
+	}
+	.velkommen{
+		margin-left: -20%;
+	    width: 46%;
+	}
+	#logo{
+	    width: 95%;
+	}
+	.forsideHeader{
+	    padding: 10px 0px;
+	}
+}
+@media screen and (min-width:300px) and (max-width:667px)
+{
+	.footerInfoKontakt{
+		font-size: 9px;
+	    margin: 6.5% 0;
+	}	
+	.footerInfo{
+		font-size: 9px;
+	    margin: -1% 0;
+	}
+	h4{
+		display: none;
+	}
+	.forsideFooter{
+		bottom: 2%;
+    	height: 80px;
+	}
+	#adresseInfo{
+		margin:0;
+	}
+	#kontaktInfo{
+		margin: 0;
+	}
+}
+/*_______Responsiv - main________*/
+@media screen and (min-width:980px) and (max-width:1150px)
+{
+	.widthOnPage{
+		width: 95%;
+	}
+	#mainFooter img{
+	    right: 25%;
+	}
+}
+@media screen and (min-width:914px) and (max-width:979px)
+{
+	#mainFooter img{
+		right: 20%;
+		width: 8.6%;
+	}
+	.widthOnPage{
+		width: 100%;
+	}	
+}
+@media screen and (min-width:300px) and (max-width:913px)
+{
+	header .widthOnPage{
+		display: block;
+	}
+	.mainLogo{
+		width: 100%;
+	}
+	.mainLogo img {
+		width: 50%;
+	}
+	nav {
+		width: 100%;
+		text-align: center;
+	}
+	nav a{
+	    padding: 25px 14px 40px;
+	}
+	.mainHeader{
+	    width: 100%;
+		text-align: center;
+	}
+	.widthOnPage{
+	    width: 95%;
+	}
+	.billeder{
+		width: 50%;
+		text-align: center;
+	}
+	.tilbud img{
+		width: 90%;
+	}
+	#mainFooter img{
+	    right: 14%;
+		width: 12.6%;
+	}
+	nav ul ul li a {
+		padding: 5px 7px 5px;
+	}
+}
+@media screen and (min-width:300px) and (max-width:658px)
+{
+	nav a {
+		padding: 25px 8px 40px;
+	}
+}
+@media screen and (min-width:300px) and (max-width:547px)
+{
+	.widthOnPage{
+		display: block;
+	}
+	.tilbud{
+		margin: 0 auto;
+		width: 100%;
+	    padding: 4% 0;
+	}
+	#tilbudBorder{
+		border: none;
+	}
+	nav{
+		display: none;
+		width: 15%;
+	}
+	.mainLogo{
+		width: 85%;
+	}
+	.mainHeader{
+		text-align: left;
+	}
+	.mainLogo img {
+		width: 75%;
+	}
+	.skaersoegaardVin {
+		width: 100%;
+	    margin: 6% 0;
+	}
+	.billeder{
+		width: 100%;
+	}
+}
+/*______Responsiv kontakt________*/
+@media screen and (min-width:300px) and (max-width:1132px)
+{
+	.kontaktFormular{
+		width: 50%;
+	}	
+}
+@media screen and (min-width:300px) and (max-width:913px)
+{
+	.kontaktFormular{
+	    width: 100%;
+		bottom: 2%;
+	    height: 70%;
+		right: 0;
+	}
+	.kontaktFormular h1 {
+    	font-size: 47px;
+	}
+	input[type=text] {
+    	margin: 0px 5%;
+	}
+	input[type=number] {
+    	margin: 0px 5%;
+	}
+	input[type=date] {
+    	margin: 0px 5%;
+	}
+	input[type=submit] {
+    	margin: 0px 5%;
+	}
+	fieldset br{
+		display:none;
+	}
+}

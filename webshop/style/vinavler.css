@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+main{
+	background: url("../image/vinmarker2.jpg") center top no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+header{
+	background-color:#a20b0b;
+	height: 100%;
+	width: 24%;
+	position: absolute;
+	z-index: 10;
+    right: 7%;
+}
+#menu{
+    width: 13%;
+    position: absolute;
+    z-index: 10;
+    top: 1%;
+    left: 4%;
+}
+#vinrankeLogo{
+	width: 35%;
+    position: absolute;
+    bottom: 20%;
+    z-index: 12;
+    right: 6%;
+}
+#forening{
+	position: absolute;
+	z-index: 14;
+    bottom: 23%;
+    left: 4%;
+    width: 55%;
+}
+.menu{
+	position: relative;
+	height: 100%;
+}
+.velkommen{
+	position: absolute;
+	z-index: 10;
+    bottom: 7%;
+    left: 7%;
+}
+.velkommen h2{
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 900;
+}
+h1{
+	color: #ffffff;
+	font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+	z-index: 16;
+	top: 45%;
+	left: 3%;
+}
+.menu p{
+	font-weight: 700;
+	color:#ffffff;
+	background-color: #000000;
+	font-size: 18px;
+	padding: 12px;
+    position: absolute;
+	z-index: 18;
+    bottom: 0;
+}
+/*_________Responsiv________*/
+@media screen and (min-width:300px) and (max-width:970px)
+{
+	.velkommen{
+		    left: 1%;
+	}
+	.velkommen h2{
+		font-size: 35px;
+	}
+}
+@media screen and (min-width:300px) and (max-width:780px)
+{
+	header{
+		width: 30%;
+		right: 0%;
+	}
+	.menu p {
+		font-size: 14px;
+	}
+	.velkommen h2{
+	    padding: 0 2%;
+	}
+	#menu{
+		width: 30%;
+	}
+}
